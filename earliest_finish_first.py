@@ -12,7 +12,8 @@ def earliest_finish_first(jobs_hours):
 
     return job_for_day  # Return the list of scheduled jobs
 
-# List of jobs with their start and finish times
-jobs_hours = [(2, 4), (2, 3), (1, 4), (5, 8), (3, 4), (3, 5)]
-print(jobs_hours)  # Print the original list of jobs
-print(earliest_finish_first(jobs_hours))  # Print the scheduled jobs
+if __name__ == "__main__":
+    # List of jobs with their start and finish times
+    jobs_hours = [(2, 4), (2, 3), (1, 4), (5, 8), (3, 4), (3, 5)]
+    print(jobs_hours)  # Print the original list of jobs
+    print(earliest_finish_first(jobs_hours))  # Print the scheduled jobs

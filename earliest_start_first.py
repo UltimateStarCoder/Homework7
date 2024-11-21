@@ -14,5 +14,6 @@ def earliest_start_first(jobs_hours):
     
     return job_for_day
 
-jobs_hours = [(2, 3), (1, 2), (5, 8), (3, 4),(3, 5)]
-print(earliest_start_first(jobs_hours))
+if __name__ == "__main__":
+    jobs_hours = [(2, 3), (1, 2), (5, 8), (3, 4),(3, 5)]
+    print(earliest_start_first(jobs_hours))
