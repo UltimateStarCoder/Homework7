@@ -25,4 +25,5 @@ if __name__ == "__main__":
     
     selected_jobs = shortest_duration_first(jobs_hours)
     selected_jobs.sort(key=lambda x: x[0])
-    print("Selected jobs (start time, end time):", selected_jobs)
+    print("Selected jobs (start time, end time):")
+    print(tabulate(selected_jobs, headers=["Job Start Time", "Job End Time"], tablefmt="grid", stralign="center", numalign="center"))
